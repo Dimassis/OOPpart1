@@ -39,7 +39,7 @@ public class Slytherin extends Hogwarts {
         this.resourcefulness = resourcefulness;
     }
     public String getFaculty() {
-        return faculty;
+        return "Slytherin";
     }
     public String toString() {
         return "Имя: " + getName() +

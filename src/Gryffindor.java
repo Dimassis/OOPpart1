@@ -2,7 +2,6 @@ public class Gryffindor extends Hogwarts {
     private int nobility;
     private int honor;
     private int courage;
-    private String faculty = "Gryffindor";
 
     public Gryffindor(String name, int powerMagic, int transgressionDistance, int nobility, int honor, int courage) {
         super(name, powerMagic, transgressionDistance);
@@ -33,7 +32,7 @@ public class Gryffindor extends Hogwarts {
         this.courage = courage;
     }
     public String getFaculty() {
-        return faculty;
+        return "Gryffindor";
     }
     @Override
     public String toString() {

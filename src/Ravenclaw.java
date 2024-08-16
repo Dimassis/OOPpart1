@@ -31,7 +31,7 @@ public class Ravenclaw extends Hogwarts {
         this.creative = creative;
     }
     public String getFaculty() {
-        return faculty;
+        return "Ravenclaw";
     }
     public String toString() {
         return "Имя: " + getName() +

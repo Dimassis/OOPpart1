@@ -31,7 +31,7 @@ public class Hufflepuff extends Hogwarts {
         this.honest = honest;
     }
     public String getFaculty() {
-        return faculty;
+        return "Hufflepuff";
     }
     public String toString() {
         return "Имя: " + getName() +

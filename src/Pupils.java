@@ -22,37 +22,35 @@ public class Pupils {
         }
     }
     public void comparisonInsideFaculty(String name1, String name2) {
-        String faculty1 ="";
-        String faculty2 = "";
+        String faculty1 = "", faculty2 = "";
+        int x = 0, y = 0;
+
         for (Hogwarts hogwarts : pupil) {
             if (hogwarts.getName().equals(name1)) {
                 faculty1 = hogwarts.getFaculty();
+                x = hogwarts.comparisonOne();
             }
             if (hogwarts.getName().equals(name2)) {
                 faculty2 = hogwarts.getFaculty();
+                y = hogwarts.comparisonOne();
             }
         }
-        int x = 0, y = 0;
-        if(faculty2 != faculty1) {
+
+        if (!faculty1.equals(faculty2)) {
             System.out.println("Ученики из разных факультетов");
+            return;
+        }
+
+        System.out.println("Сравнение учеников из " + faculty1);
+        System.out.println("У " + name1 + " Сумма баллов ровна " + x);
+        System.out.println("У " + name2 + " Сумма баллов ровна " + y);
+
+        if (x > y) {
+            System.out.println(name1 + " обладает большей магией, чем " + name2);
+        } else if (x < y) {
+            System.out.println(name2 + " обладает большей магией, чем " + name1);
         } else {
-            System.out.println("Сравнение учеников из " + faculty1);
-            for(Hogwarts hogwarts : pupil) {
-                if(hogwarts.getName().equals(name1)) {
-                    x = hogwarts.comparisonOne();
-                    System.out.println("У " + name1 + " Сумма баллов ровна " + hogwarts.comparisonOne());
-                }if(hogwarts.getName().equals(name2)) {
-                    y = hogwarts.comparisonOne();
-                    System.out.println("У " + name2 + " Сумма баллов ровна " + hogwarts.comparisonOne());
-                }
-            }
-            if(x > y) {
-                System.out.println(name1 + " обладает большей магией, чем " + name2);
-            } else if (x < y) {
-                System.out.println(name2 + " обладает большей магией, чем " + name1);
-            } else {
-                System.out.println(name1 + " и " + name2 + " равны");
-            }
+            System.out.println(name1 + " и " + name2 + " равны");
         }
     }
 
