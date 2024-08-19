@@ -33,6 +33,6 @@ public class Hogwarts {
         return faculty;
     }
     public int comparisonOne() {
-        return comparisonOne();
+        return 0;
     }
 }
