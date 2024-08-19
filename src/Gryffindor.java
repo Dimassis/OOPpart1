@@ -10,7 +10,7 @@ public class Gryffindor extends Hogwarts {
         this.courage = courage;
     }
 
-    public int comparisonOne() {
+    public int getSpecificAbilitiesSum() {
         return honor + courage + nobility;
     }
     public int getNobility() {

@@ -1,4 +1,4 @@
-public class Hogwarts {
+public  abstract class Hogwarts {
     private String name;
     private  int powerMagic;
     private int transgressionDistance;
@@ -32,7 +32,6 @@ public class Hogwarts {
     public String getFaculty() {
         return faculty;
     }
-    public int comparisonOne() {
-        return 0;
-    }
+    protected abstract int getSpecificAbilitiesSum();
+
 }

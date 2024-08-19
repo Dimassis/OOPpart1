@@ -11,7 +11,7 @@ public class Slytherin extends Hogwarts {
         this.ambition = ambition;
         this.resourcefulness = resourcefulness;
     }
-    public int comparisonOne() {
+    public int getSpecificAbilitiesSum() {
         return cunning + determination + ambition + resourcefulness;
     }
     public int getCunning() {

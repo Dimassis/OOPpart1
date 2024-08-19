@@ -9,7 +9,7 @@ public class Hufflepuff extends Hogwarts {
         this.loyal = loyal;
         this.honest = honest;
     }
-    public int comparisonOne() {
+    public int getSpecificAbilitiesSum() {
         return hardworking + loyal + honest;
     }
     public int getHardworking() {

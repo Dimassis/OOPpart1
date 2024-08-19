@@ -9,7 +9,7 @@ public class Ravenclaw extends Hogwarts {
         this.wise = wise;
         this.creative = creative;
     }
-    public int comparisonOne() {
+    public int getSpecificAbilitiesSum() {
         return smart + wise + creative;
     }
     public int getSmart() {

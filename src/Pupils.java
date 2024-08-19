@@ -28,11 +28,11 @@ public class Pupils {
         for (Hogwarts hogwarts : pupil) {
             if (hogwarts.getName().equals(name1)) {
                 faculty1 = hogwarts.getFaculty();
-                x = hogwarts.comparisonOne();
+                x = hogwarts.getSpecificAbilitiesSum();;
             }
             if (hogwarts.getName().equals(name2)) {
                 faculty2 = hogwarts.getFaculty();
-                y = hogwarts.comparisonOne();
+                y = hogwarts.getSpecificAbilitiesSum();
             }
         }
 
